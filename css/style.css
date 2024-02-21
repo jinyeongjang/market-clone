@@ -1,0 +1,33 @@
+@import "reset.css";
+@import "header.css";
+@import "footer.css";
+@import "main.css";
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+    "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI",
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
+}
+
+.media-info-msg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* 화면에 보이는 view-height: 100% */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: salmon;
+  /* 평상시 화면사이즈를 줄여주세요 문구 출력x */
+  opacity: 1;
+}
+
+/* 380 넒이만큼 길면 화면에 '화면사이즈를 줄여주세요.' 문구 출력 */
+@media screen and (max-width: 500px) {
+  .media-info-msg {
+    opacity: 0;
+}
+}
