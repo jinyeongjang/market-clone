@@ -30,6 +30,29 @@ footer {
   transform: scale(0.8);
 }
 
+@keyframes icons-air {
+  0% {
+    transform: translateY(0px);
+  }
+  30% {
+    transform: translateY(-10px);
+  }
+
+  70% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 .footer-icons__img {
   width: 30px;
+
+}
+
+.footer-icons:hover .footer-icons__img {
+  animation: 2s icons-air;
+
 }
