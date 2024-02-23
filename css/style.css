@@ -3,6 +3,12 @@
 @import "footer.css";
 @import "main.css";
 
+/* 버튼별로 색상지정보다, 변수로 만들어서 색상을 지정하는것이 좋다. */
+:root {
+  --button-primary: rgb(254, 111, 15);
+  --button-hover: rgba(254, 111, 15, 0.8);
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
     "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI",

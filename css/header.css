@@ -59,6 +59,35 @@ header {
   width: 25px;
   margin-right: 10px;
   cursor: pointer;
+}
 
-  
+/* 메뉴 바 애니메이션 추가 */
+/* 클래스 별 개별요소 추가예정. */
+.menu-bar__icons__desc {
+  margin-top: 5px;
+  font-weight: bold;
+  transform: scale(0.8);
+}
+
+@keyframes menu-bar__icons {
+  0% {
+    transform: scale(0);
+  }
+  30% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+.menu-bar__icons img {
+  width: 30px;
+}
+
+.menu-bar__icons:hover {
+  animation: 2s menu-bar__icons;
 }
